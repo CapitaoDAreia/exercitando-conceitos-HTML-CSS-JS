@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="title">
+        <h1>age checker</h1>
+    </header>
+    <section id="content">
+        <div class="child">
+            <label for="birth-year">birth year</label>
+            <input type="number" name="birth-year" id="birth-year">
+        </div>
+        <div class="child">
+            <p>Sex:
+                <input type="radio" name="sexcheck" id="female" >
+                <label for="female">Female</label>
+                <input type="radio" name="sexcheck" id="male">
+                <label for="male">Male</label>
+            </p>
+            <div id="submit">
+                <input type="button" value="SUBMIT" onclick="calculate()">
+            </div>
+        </div>
+        <div id="child-two" class="child">
+            <p id="res"> 
+                Your result here!
+            </p>
+            <img src="ex2-img/empty.jpg" alt="Olá!" id="photo" width="100px" height="100px">
+        </div>
+        
+    </section>
+    <footer id="baseboard">
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
