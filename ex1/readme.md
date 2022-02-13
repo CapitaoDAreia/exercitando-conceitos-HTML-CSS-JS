@@ -1,3 +1,4 @@
-# Exercício com HTML, CSS e JS
+# Exercising with HTML, CSS e JS
+## Hora do dia
 
-- Neste exercício as propriedades da página sofrem alterações de acordo com a hora do sistema do usuário.
+- In this exercise, the page properties change according to the user's system time.
