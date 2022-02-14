@@ -15,10 +15,15 @@
         <div id="number-container">
             <label for="number">Number</label>
             <input type="number" name="number" id="number">
-            <input type="button" value="Calculate" id="calculate">
+                <div id="buttons">
+                    <input type="button" value="Calculate" id="calculate" onclick="calculate()">
+                    <input type="button" value="Reset" id="reset" onclick="reset()">
+                </div>
         </div>
         <div id="table-container">
-            <textarea name="table" id="table" cols="11" rows="11"></textarea>
+            <select name="table" id="table" size="11">
+
+            </select>
         </div>
 
     </section>

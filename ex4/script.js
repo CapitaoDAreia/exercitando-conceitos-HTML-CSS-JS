@@ -1,26 +1,18 @@
 function calculate(){
-    let start = Number(document.getElementById('start').value)
-    let end = Number(document.getElementById('end').value)
-    let pace = Number(document.getElementById('pace').value)
-    let res = document.getElementById('res')
+    let number = Number(document.getElementById('number').value)
+    let table = document.getElementById('table')
 
-   res.innerHTML = `Result:`
+    table.innerHTML = ` `
 
-    if(start <= 100 && end <= 100 && pace <= 100 && (start > end && pace != 0 && (pace <= start || pace <= end))){
-        for(let i = start; i >= end; i-=pace){
-           res.innerHTML +=  `&#128073; ${i}`
-            
-        }
+    for(let i = 0; i <=10; i++){
+        let object = document.createElement('option')
+        object.text = `${number} X ${i} = ${number*i}`
+        table.appendChild(object)
     }
-    else if(start <= 100 && end <= 100 && pace <= 100 && (start < end && pace != 0 && (pace <= start || pace <= end))){
-        for(let i = start; i <= end; i+=pace){
-            res.innerHTML +=  `&#128073; ${i}`
-            
-        }
-    } 
-    else{
-        alert("I need a start point and a correct pace at least! All < 100!")
-    }
+}
+function reset(){
+    let table = document.getElementById('table')
+    table.innerHTML = ` `
 }
 
 

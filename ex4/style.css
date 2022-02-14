@@ -34,9 +34,35 @@ section{
     flex-direction: column;
     align-items: center;
 }
-#calculate{
+#buttons{
     margin-top: 5%;
 }
+#calculate{
+    margin-top: 5%;
+    width: 6rem;
+    background-color: #0a0a6a;
+    color: #F5F2E7;
+
+    border-radius: 1rem;
+}
+#calculate:hover{
+    background-color: #36368d;
+    width: 6.1rem;
+}
+#reset{
+    margin-top: 5%;
+    width: 6rem;
+    background-color: #0a0a6a;
+    color: #F5F2E7;
+
+    border-radius: 1rem;
+}
+#reset:hover{
+    background-color: #36368d;
+    width: 6.1rem;
+}
+
+
 #table-container{
     width: 100%;
     display: flex;
@@ -44,14 +70,14 @@ section{
 
 }
 #table{
-    width: 95%;
+    width: 40%;
     height: 100%;
+
 }
 footer{
     margin-top: 5%;
-    text-align: center;
 }
-@media (max-width:350px) {
+@media (max-width:430px) {
     section{
         margin-top: 5%;
     
